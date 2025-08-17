@@ -5,10 +5,11 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 5rem;
+  height: 6rem;
   box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.2);
   padding: 0 1.5rem;
   backdrop-filter: blur(15px);
+  gap: 1rem;
 }
 .header button {
   background: transparent;
@@ -26,16 +27,19 @@
   font-size: 1.7rem;
   font-weight: bold;
 }
-.header .group {
+.header .form__search {
+  margin-top: 0.5rem;
+}
+.header .form__search .group {
   display: flex;
   align-items: center;
 }
-.header .group .search__icon {
+.header .form__search .group .search__icon {
   position: absolute;
   margin-left: 0.5rem;
   color: #979797;
 }
-.header .group .grop__input {
+.header .form__search .group .grop__input {
   background: #cfcfcf;
   border: none;
   outline: none;

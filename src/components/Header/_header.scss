@@ -4,10 +4,11 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 5rem;
+  height: 6rem;
   box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.2);
   padding: 0 1.5rem;
   backdrop-filter: blur(15px);
+  gap: 1rem;
 
   button{
     background: transparent;
@@ -28,25 +29,29 @@
     }
   }
 
-  .group {
-    display: flex;
-    align-items: center;
+  .form__search{
+    margin-top: .5rem;
 
-    .search__icon {
-      position: absolute;
-      margin-left: .5rem;
-      color: #979797;
-    }
+    .group {
+      display: flex;
+      align-items: center;
 
-    .grop__input {
-      background: #cfcfcf;
-      border: none;
-      outline: none;
-      padding: .4rem 2rem;
-      border-radius: 1rem;
-      width: 22rem;
-      height: 2rem;
-      color: #3c3c3c;
+      .search__icon {
+        position: absolute;
+        margin-left: .5rem;
+        color: #979797;
+      }
+
+      .grop__input {
+        background: #cfcfcf;
+        border: none;
+        outline: none;
+        padding: .4rem 2rem;
+        border-radius: 1rem;
+        width: 22rem;
+        height: 2rem;
+        color: #3c3c3c;
+      }
     }
   }
 }

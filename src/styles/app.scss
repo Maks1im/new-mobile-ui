@@ -1,5 +1,8 @@
 @use "../components/Header/header.scss" as *;
 @use "../components/MenuMobile/menuMobile.scss" as *;
+@use "../pages/Account/account.scss" as *;
+@use "../pages/Add/add.scss" as *;
+@use "../pages/settings/settings.scss" as *;
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {

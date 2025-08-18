@@ -32,6 +32,8 @@
   }
 
   .form__search{
+    display: flex;
+    justify-content: center;
     margin-top: .5rem;
 
     .group {
@@ -50,7 +52,7 @@
         outline: none;
         padding: .4rem 2rem;
         border-radius: 1rem;
-        width: 22rem;
+        width: 20rem;
         height: 2rem;
         color: #3c3c3c;
       }

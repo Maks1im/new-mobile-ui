@@ -10,6 +10,7 @@
   padding: 0 1.5rem;
   backdrop-filter: blur(15px);
   gap: 1rem;
+  z-index: 1000;
 }
 .header button {
   background: transparent;
@@ -26,6 +27,7 @@
 .header-navigator .link__logo {
   font-size: 1.8rem;
   font-weight: bold;
+  font-family: sans-serif;
 }
 .header .form__search {
   margin-top: 0.5rem;
@@ -50,13 +52,42 @@
   color: #3c3c3c;
 }
 
-body {
-  background: #201F1F;
-  font-family: "Nunito", sans-serif;
-  color: white;
+.menu-mobile-nav {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.2);
+  height: 4.5rem;
+  width: 100%;
+  z-index: 999;
+}
+.menu-mobile-nav .menu-mobile-menu {
+  display: flex;
+  gap: 1rem;
+}
+.menu-mobile-nav .menu-mobile-menu .links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.menu-mobile-nav .active {
+  color: #f76cff;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #201F1F;
+  font-family: "Nunito", sans-serif;
+  color: white;
 }
 body a {
   text-decoration: none;

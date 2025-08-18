@@ -1,13 +1,19 @@
 @use "../components/Header/header.scss" as *;
+@use "../components/MenuMobile/menuMobile.scss" as *;
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-body {
-  background: #201F1F;
-  font-family: 'Nunito', sans-serif;
-  color: white;
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #201F1F;
+  font-family: 'Nunito', sans-serif;
+  color: white;
 
   a{
     text-decoration: none;

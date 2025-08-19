@@ -2,7 +2,11 @@
 @use "../components/MenuMobile/menuMobile.scss" as *;
 @use "../pages/Account/account.scss" as *;
 @use "../pages/Add/add.scss" as *;
-@use "../pages/settings/settings.scss" as *;
+@use "../pages/Settings/settings.scss" as *;
+@use "../modals/ModalRecommendations/modalReacommendations" as *;
+@use "../modals/ModalMenuOther/modalMenuOther" as *;
+@use "../pages/Recommendations/recommendations.scss" as *;
+@use "../pages/AboutUs/aboutUs.scss" as *;
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {

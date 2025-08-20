@@ -35,6 +35,7 @@ function Settings() {
                             </svg>
                         </button></li>
                         <li className={"menu__item"}>id <input value={userData.id}/> </li>
+                        <button className={"save__btn"}>Сохранить</button>
                     </ul>
                 </nav>
             </div>

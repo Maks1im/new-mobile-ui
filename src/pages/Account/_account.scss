@@ -1,32 +1,12 @@
-.main__account{
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+@use "../../styles/mixins/mixins" as*;
 
-  .header__account{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.main__account {
+  @include account-styles;
 
-    .account__info-main{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 1rem;
-
-      .account__logo{
-        width: 3.5rem;
-        border-radius: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .account__info{
-        display: flex;
-        flex-direction: column;
-      }
-    }
+  .subscribe-button{
+    @include buttonStyle;
+    padding: .5rem;
+    width: 11rem;
+    font-size: .9rem;
   }
 }

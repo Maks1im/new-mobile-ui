@@ -1,17 +1,16 @@
 import Header from "../../components/Header/Header.jsx";
 import MenuMobile from "../../components/MenuMobile/MenuMobile.jsx";
-import Video from "../../components/Video/Video.jsx";
 import AccountPage from "../../components/AccountPage/AccountPage.jsx";
 
-function Account() {
+function Users() {
     return (
         <>
             <Header />
             <main className={"main__account"}>
-               <AccountPage/>
+                <AccountPage showSubscribeButton={true} />
                 <main className={"main-container"}>
                     <div className={"main-video-container"}>
-                        <Video/>
+
                     </div>
                 </main>
             </main>
@@ -20,4 +19,4 @@ function Account() {
     )
 }
 
-export default Account
+export default Users;

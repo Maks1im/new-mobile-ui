@@ -7,6 +7,9 @@
 @use "../modals/ModalMenuOther/modalMenuOther" as *;
 @use "../pages/Recommendations/recommendations.scss" as *;
 @use "../pages/AboutUs/aboutUs.scss" as *;
+@use "../components/Video/video.scss" as *;
+@use "../pages/Watch/watch.scss" as *;
+@use "../components/Buttons/SubButton.scss" as *;
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {

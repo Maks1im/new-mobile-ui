@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './styles/app.css';
+import NotFound from './pages/NotFoundPage/NotFound.jsx';
 
 
 //lazy loading
@@ -27,6 +28,7 @@ function App() {
                                     <Route path="/about" element={<AboutUs />} />
                                 <Route path="/user" element={<Users />} />
                         <Route path={"/watch"} element={<Watch />} />
+                        <Route path="*" element={<NotFound />} />
                     </Routes>
                 </Suspense>
             </BrowserRouter>

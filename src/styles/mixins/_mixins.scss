@@ -1,3 +1,5 @@
+//style button
+
 @mixin buttonStyle {
   padding: 0.8rem;
   cursor: pointer;
@@ -12,7 +14,13 @@
   &:hover {
     background: blueviolet;
   }
+
+  @media (min-width: 1024px) {
+    padding: .5rem;
+  }
 }
+
+//style modal
 
 @mixin main-style-modal{
   position: absolute;
@@ -62,10 +70,35 @@
         flex-direction: column;
       }
     }
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+    }
   }
 
   hr {
     width: 90%;
     margin: 0 auto;
+
+    @media (min-width: 1024px) {
+      width: 98%;
+    }
   }
+
+  @media (min-width: 1024px) {
+    margin-top: 2rem;
+    padding: 0 1.5rem;
+  }
+}
+
+//video
+
+@mixin video{
+  aspect-ratio: 16 / 9;
+  border: none;
+  background: #000;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 42px 6px rgba(0, 0, 0, 0.2);
 }

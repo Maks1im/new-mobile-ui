@@ -25,4 +25,8 @@
   .active{
     color: #f76cff;
   }
+  
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }

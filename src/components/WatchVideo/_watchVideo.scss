@@ -1,0 +1,11 @@
+@use "../../styles/mixins/mixins" as *;
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+
+  .video-watch{
+    @include video;
+    width: 100%;
+  }
+}

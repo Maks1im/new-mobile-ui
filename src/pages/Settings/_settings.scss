@@ -1,7 +1,7 @@
-@use "../../styles/mixins/mixins" as*;
 .settings{
   display: flex;
   flex-direction: column;
+  width: 100%;
   padding: 2rem;
   gap: 2rem;
 
@@ -28,6 +28,11 @@
         background: transparent;
         color: white;
         outline: none;
+
+        @media (min-width: 1024px) {
+          padding: .5rem;
+          align-items: center;
+        }
       }
 
       button{
@@ -37,12 +42,9 @@
         cursor: pointer;
       }
     }
+  }
 
-    .save__btn{
-      @include buttonStyle;
-      padding: .5rem;
-      width: 10rem;
-      font-size: .9rem;
-    }
+  @media (min-width: 1024px) {
+    width: 55%;
   }
 }

@@ -1,11 +1,14 @@
 function WatchVideo() {
     return (
         <div className={"video-container"}>
-            <iframe
-                className="video"
-                src=""
-                allowFullScreen
-            ></iframe>
+            <div className="video-wrapper">
+                <iframe
+                    className="video-watch"
+                    src=""
+                    allowFullScreen
+                    title="Video player"
+                ></iframe>
+            </div>
             <h2>Название видео</h2>
         </div>
     );

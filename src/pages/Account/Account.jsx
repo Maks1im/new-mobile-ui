@@ -1,21 +1,20 @@
-import Header from "../../components/Header/Header.jsx";
-import MenuMobile from "../../components/MenuMobile/MenuMobile.jsx";
 import Video from "../../components/Video/Video.jsx";
 import AccountPage from "../../components/AccountPage/AccountPage.jsx";
+import Layout from "../../components/Layout/Layout.jsx";
 
 function Account() {
     return (
         <>
-            <Header />
-            <main className={"main__account"}>
-               <AccountPage/>
-                <main className={"main-container"}>
-                    <div className={"main-video-container"}>
-                        <Video/>
-                    </div>
+            <Layout>
+                <main className={"main__account"}>
+                    <AccountPage/>
+                    <main className={"main-container"}>
+                        <div className={"main-video-container"}>
+                            <Video/>
+                        </div>
+                    </main>
                 </main>
-            </main>
-            <MenuMobile/>
+            </Layout>
         </>
     )
 }

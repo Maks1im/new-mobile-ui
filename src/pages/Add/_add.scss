@@ -12,11 +12,11 @@
   gap: .5rem;
 
   .custum-file-upload {
-    height: 200px;
-    width: 300px;
+    height: 12.5rem;
+    width: 19rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.4rem;
     cursor: pointer;
     align-items: center;
     justify-content: center;
@@ -52,6 +52,11 @@
     input {
       display: none;
     }
+
+    @media (min-width: 1024px) {
+      width: 30rem;
+      height: 25rem;
+    }
   }
 
   .Name{
@@ -60,15 +65,19 @@
     background: transparent;
     outline: none;
     color: white;
-    font-size: .9rem;
+    font-size: .95rem;
     width: 100%;
     max-width: 300px;
+
+    @media (min-width: 1024px) {
+     max-width: 500px;
+    }
   }
 
   .add__button__div{
     display: flex;
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
     justify-content: flex-start;
 
     .add-btn{
@@ -76,6 +85,15 @@
       padding: .5rem;
       width: 10rem;
       font-size: .9rem;
+
+      @media (min-width: 1024px) {
+        padding: .8rem;
+        width: 15rem;
+      }
     }
+  }
+
+  @media (min-width: 1024px) {
+    height: 100%;
   }
 }

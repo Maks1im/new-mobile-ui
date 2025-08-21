@@ -1,14 +1,13 @@
-import Header from "../../components/Header/Header.jsx";
-import MenuMobile from "../../components/MenuMobile/MenuMobile.jsx";
+import Layout from "../../components/Layout/Layout.jsx";
 
 function Recommendations () {
     return (
         <>
-            <Header/>
-            <main className={".main-recommendations"}>
+            <Layout>
+                <main className={".main-recommendations"}>
 
-            </main>
-            <MenuMobile/>
+                </main>
+            </Layout>
         </>
     )
 }
